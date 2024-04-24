@@ -1,4 +1,4 @@
-import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/app/pokemons";
+import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/pokemons";
 
 const getPokemos = async (
   limit: number = 500,
