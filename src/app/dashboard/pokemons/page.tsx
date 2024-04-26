@@ -1,7 +1,15 @@
-import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/app/pokemons";
+import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/pokemons";
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Pokemons",
+    description: "Pokemon list",
+  };
+}
 
 const getPokemos = async (
-  limit: number = 500,
+  limit: number = 151,
   offset: number = 0
 ): Promise<SimplePokemon[]> => {
   const data: PokemonsResponse = await fetch(

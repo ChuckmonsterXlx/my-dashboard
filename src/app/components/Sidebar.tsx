@@ -33,7 +33,7 @@ export const Sidebar = () => {
     <div
       id="menu"
       style={{ width: "400px" }}
-      className="left-0 z-10 w-64 min-h-screen overflow-y-scroll bg-gray-900 text-slate-300"
+      className="left-0 z-10 w-64 min-h-screen bg-gray-900 text-slate-300"
     >
       <div id="logo" className="px-6 my-4">
         <h1 className="flex items-center gap-1 text-lg font-bold text-white md:text-2xl">
@@ -55,6 +55,7 @@ export const Sidebar = () => {
               className="w-8 h-8 rounded-full"
               src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib"
               alt="User avatar"
+              style={{ width: "50px", height: "auto" }}
               width={50}
               height={50}
             />

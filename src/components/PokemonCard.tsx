@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SimplePokemon } from "../interfaces/simple-pokemon";
+import { SimplePokemon } from "../pokemons/interfaces/simple-pokemon";
 import Image from "next/image";
 import { IoHeartOutline } from "react-icons/io5";
 
@@ -16,8 +16,9 @@ export const PokemonCard = ({ pokemon }: Props) => {
         <div className="flex flex-col items-center justify-center p-6 text-center bg-gray-800 border-b">
           <Image
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`}
-            width={100}
-            height={100}
+            style={{ width: "auto", height: "150px" }}
+            width={0}
+            height={0}
             alt={name}
             key={id}
             priority={false}
@@ -27,7 +28,7 @@ export const PokemonCard = ({ pokemon }: Props) => {
           </p>
           <div className="mt-5">
             <Link
-              href={`/dashboard/pokemon/${id}`}
+              href={`/dashboard/pokemons/${name}`}
               className="px-4 py-2 text-xs font-semibold text-gray-100 border rounded-full"
             >
               More information
