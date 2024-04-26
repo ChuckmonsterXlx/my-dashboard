@@ -55,6 +55,7 @@ export const Sidebar = () => {
               className="w-8 h-8 rounded-full"
               src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib"
               alt="User avatar"
+              style={{ width: "50px", height: "auto" }}
               width={50}
               height={50}
             />

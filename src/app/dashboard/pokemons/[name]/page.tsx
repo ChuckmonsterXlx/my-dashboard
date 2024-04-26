@@ -70,9 +70,10 @@ export default async function PokemonPage({ params }: Props) {
           <div className="flex flex-col items-center justify-center">
             <Image
               src={pokemon.sprites.other?.dream_world.front_default ?? ""}
-              width={150}
-              height={150}
-              alt={`Imagen del pokemon ${pokemon.name}`}
+              style={{ width: "100px", height: "auto" }}
+              width={0}
+              height={0}
+              alt={`Pokemon image: ${pokemon.name}`}
               className="mb-5"
             />
 
@@ -109,6 +110,7 @@ export default async function PokemonPage({ params }: Props) {
             <div className="flex justify-center">
               <Image
                 src={pokemon.sprites.front_default}
+                style={{ width: "100px", height: "auto" }}
                 width={100}
                 height={100}
                 alt={`sprite ${pokemon.name}`}
@@ -116,6 +118,7 @@ export default async function PokemonPage({ params }: Props) {
 
               <Image
                 src={pokemon.sprites.back_default}
+                style={{ width: "100px", height: "auto" }}
                 width={100}
                 height={100}
                 alt={`sprite ${pokemon.name}`}
@@ -128,6 +131,7 @@ export default async function PokemonPage({ params }: Props) {
             <div className="flex justify-center">
               <Image
                 src={pokemon.sprites.front_shiny}
+                style={{ width: "100px", height: "auto" }}
                 width={100}
                 height={100}
                 alt={`sprite ${pokemon.name}`}
@@ -135,6 +139,7 @@ export default async function PokemonPage({ params }: Props) {
 
               <Image
                 src={pokemon.sprites.back_shiny}
+                style={{ width: "100px", height: "auto" }}
                 width={100}
                 height={100}
                 alt={`sprite ${pokemon.name}`}
