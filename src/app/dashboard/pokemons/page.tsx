@@ -1,4 +1,12 @@
 import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/pokemons";
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Pokemons",
+    description: "Pokemon list",
+  };
+}
 
 const getPokemos = async (
   limit: number = 151,
