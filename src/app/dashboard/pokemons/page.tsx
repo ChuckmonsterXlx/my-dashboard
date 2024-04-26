@@ -1,7 +1,7 @@
 import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/pokemons";
 
 const getPokemos = async (
-  limit: number = 500,
+  limit: number = 151,
   offset: number = 0
 ): Promise<SimplePokemon[]> => {
   const data: PokemonsResponse = await fetch(
