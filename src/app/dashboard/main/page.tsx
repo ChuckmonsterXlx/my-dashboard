@@ -1,4 +1,4 @@
-import { SimpleWidget } from "@/app/components";
+import { SimpleWidget, WidgetsGrid } from "@/components";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,9 +12,7 @@ export default function MainPage() {
       <h1>Dashboard</h1>
       <span>General information</span>
 
-      <div className="grid grid-cols-4 gap-3 p-2">
-        <SimpleWidget />
-      </div>
+      <WidgetsGrid />
     </div>
   );
 }
