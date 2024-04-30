@@ -15,8 +15,6 @@ export interface CounterResponse {
 const getApiCounter = async (): Promise<CounterResponse> => {
   const data = await fetch("/api/counter").then((res) => res.json());
 
-  console.log("data ", data);
-
   return data;
 };
 
