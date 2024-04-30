@@ -12,7 +12,7 @@ export default function CounterPage() {
       <h1>Counter Page</h1>
       <span>Products in the shopping cart</span>
 
-      <CartCounter value={7} />
+      <CartCounter />
     </div>
   );
 }
