@@ -1,4 +1,4 @@
-import { CartCounter } from "@/app/shopping-cart";
+import { CartCounter } from "@/shopping-cart";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export default function CounterPage() {
       <h1>Counter Page</h1>
       <span>Products in the shopping cart</span>
 
-      <CartCounter value={7} />
+      <CartCounter />
     </div>
   );
 }
